@@ -1,6 +1,5 @@
 var WebSocket = require('ws');
 var { NotifyIcon, Icon, Menu } = require('not-the-systray');
-var fs = require('fs');
 var path = require('path');
 
 class App {
