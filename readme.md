@@ -72,9 +72,9 @@ Firs ot all, this app **DOES NOT** inject into G HUB. G HUB runs websocket serve
 
 ## Images ##
 
-[![](demo1.jpg)](gitassets/demo1.jpg 'Demo 1')
+[![](gitassets/demo1.jpg)](gitassets/demo1.jpg 'Demo 1')
 
-[![](demo2.jpg)](gitassets/demo2.jpg 'Demo 2')
+[![](gitassets/demo2.jpg)](gitassets/demo2.jpg 'Demo 2')
 
 # Download and Installation
 Get precompiled binary and assets on Release Page https://github.com/someweirdhuman/LogiBAT/releases/
