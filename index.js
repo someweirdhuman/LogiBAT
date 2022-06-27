@@ -199,6 +199,7 @@ class DeviceManager {
 
             //on receiving device list from getDeviceList();
             if (json.path == '/devices/list' && json.result.code == 'SUCCESS') {
+               this.devices = {};
                json.payload.deviceInfos.forEach((device) => {
                   this.registerDevice(device);
                   this.requestBatteryState(device.id);
