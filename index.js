@@ -36,6 +36,14 @@ class TrayManager {
    //updates submenu with devices list
    updateTray(devices) {
       if (!devices) return false;
+
+      if(this.trackedDevice != null){
+         var device = devices.filter((device) => device.id == this.trackedDevice);
+         if(device.length == 0){
+            this.trackedDevice = null;
+         }
+      }
+
       this.menu.update(2, {
          items: Object.values(devices).map((device) => {
             if (this.trackedDevice == null) {
