@@ -34,10 +34,11 @@ class TrayManager {
    }
 
    //updates submenu with devices list
-   updateTray(devices) {
+   updateTray(devicesObject) {
+      var devices = Object.values(devicesObject);
       if (!devices) return false;
 
-      if(this.trackedDevice != null){
+      if(this.trackedDevice){
          var device = devices.filter((device) => device.id == this.trackedDevice);
          if(device.length == 0){
             this.trackedDevice = null;
