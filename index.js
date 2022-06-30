@@ -39,7 +39,7 @@ class TrayManager {
       if (!devices) return false;
 
       if(this.trackedDevice){
-         var device = devices.filter((device) => device.id == this.trackedDevice);
+         var device = devices.filter((device) => device.pid == this.trackedDevice);
          if(device.length == 0){
             this.trackedDevice = null;
          }
@@ -78,7 +78,7 @@ class TrayManager {
    //updates text, icon in systray
    updateStateCycle() {
       var devices = Object.values(app.deviceManager.devices).filter((device) => device.percentage != null);
-      var mainDevice = devices.filter((device) => device.id == this.trackedDevice);
+      var mainDevice = devices.filter((device) => device.pid == this.trackedDevice);
       var finalIcon = this.icons['questionmark'];
 
       if (mainDevice.length == 1) {
