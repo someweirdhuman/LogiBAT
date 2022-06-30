@@ -48,7 +48,7 @@ class TrayManager {
       this.menu.update(2, {
          items: Object.values(devices).map((device) => {
             if (this.trackedDevice == null) {
-               this.setTrackedDevice(device.id);
+               this.setTrackedDevice(device.pid);
             }
 
             return {
@@ -106,7 +106,7 @@ class TrayManager {
 
       if (devices.length == 1) {
          var selectedDevice = devices[0];
-         this.setTrackedDevice(selectedDevice.id);
+         this.setTrackedDevice(selectedDevice.pid);
       }
    }
 
