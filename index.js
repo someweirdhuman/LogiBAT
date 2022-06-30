@@ -54,7 +54,7 @@ class TrayManager {
             return {
                id: Number(device.deviceUnitId),
                text: device.displayName + '(' + device.pid + ')',
-               checked: device.id == this.trackedDevice,
+               checked: device.pid == this.trackedDevice,
             };
          }),
       });
