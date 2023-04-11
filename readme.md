@@ -31,7 +31,7 @@ It can be untsable, it can crash, it can cause all kind of issues.
 
 ## How does it work
 
-Firs ot all, this app **DOES NOT** inject into G HUB. G HUB runs websocket server **(ws://localhost:9010)** in the background, most likely to provide data to other apps, websites etc. We can listen to this websocket server and send request to it. This app only sends 2 requests in intervals to get battery state and keep it up to date.
+First of all, this app **DOES NOT** inject into G HUB. G HUB runs websocket server **(ws://localhost:9010)** in the background, most likely to provide data to other apps, websites etc. We can listen to this websocket server and send request to it. This app only sends 2 requests in intervals to get battery state and keep it up to date.
 
 ```javascript
    ...
